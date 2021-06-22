@@ -1,0 +1,7 @@
+/selenium_env/pyvenv.cfg
+/conftest.py
+/requirements.txt
+/.idea/
+/__init__.py
+/geckodriver.log
+
