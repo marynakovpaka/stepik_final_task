@@ -17,3 +17,8 @@ class ProductPageLocators():
     NAME_OF_PRODUCT_IN_BASKET = (By.CSS_SELECTOR, "div.alertinner strong:first-child")
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".price_color")
     PRODUCT_PRICE_IN_BASKET = (By.CSS_SELECTOR, "div .alertinner p:first-child strong")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "div .alertinner")
+
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
