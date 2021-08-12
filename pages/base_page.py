@@ -1,4 +1,3 @@
-
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import NoAlertPresentException
 from selenium.webdriver.support.ui import WebDriverWait
@@ -6,7 +5,6 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
 from .locators import BasePageLocators, MainPageLocators
 import math
-import time
 
 
 class BasePage():
@@ -65,14 +63,6 @@ class BasePage():
     def go_to_basket_screen(self):
         assert self.is_element_present(*MainPageLocators.OPEN_BASKET_SCREEN_BUTTON), "Link to basket screen is absent on page"
         self.browser.find_element(*MainPageLocators.OPEN_BASKET_SCREEN_BUTTON).click()
-
-    # def email_generator(self):
-    #     email = str(time.time()) + "@fakemail.org"
-    #     return email
-    #
-    # def password_generator(self):
-    #     password = str(time.time())
-    #     return password
 
     def should_be_authorized_user(self):
         assert self.is_element_present(*BasePageLocators.USER_ICON), "User icon is not presented," \

@@ -1,12 +1,11 @@
-
 from selenium.webdriver.common.by import By
 
 
 class MainPageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
-    OPEN_BASKET_SCREEN_BUTTON = (By.CSS_SELECTOR,".btn-group :first-child")
-    BASKET_IS_EMPTY_MESSAGE = (By.CSS_SELECTOR,".content_inner :first-child")
-    PRODUCT_IN_BASKET_EXIST = (By.CSS_SELECTOR,"a.btn.btn-lg.btn-primary.btn-block")
+    OPEN_BASKET_SCREEN_BUTTON = (By.CSS_SELECTOR, ".btn-group :first-child")
+    BASKET_IS_EMPTY_MESSAGE = (By.CSS_SELECTOR, ".content_inner :first-child")
+    PRODUCT_IN_BASKET_EXIST = (By.CSS_SELECTOR, "a.btn.btn-lg.btn-primary.btn-block")
 
 
 class LoginPageLocators ():
